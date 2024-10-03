@@ -1,4 +1,6 @@
 def pascal_triangle(n):
+    if n <= 0: 
+        return []
 
     triangle = [[1] * (i + 1) for i in range(n)]
 
