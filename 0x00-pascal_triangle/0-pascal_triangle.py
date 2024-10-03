@@ -3,6 +3,7 @@
     Pascal triangle
 """
 
+
 def pascal_triangle(n):
     """generate a pascal triangle base on user input
 
@@ -12,7 +13,7 @@ def pascal_triangle(n):
     Returns:
         list: the list containing the triangle element (if n > 0)
     """
-    if n <= 0: 
+    if n <= 0:
         return []
 
     triangle = [[1] * (i + 1) for i in range(n)]
