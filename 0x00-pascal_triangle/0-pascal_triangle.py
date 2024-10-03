@@ -1,6 +1,6 @@
 #!/usr/python3
 """
-    Pascal triangle
+0. Pascal triangle
 """
 
 
