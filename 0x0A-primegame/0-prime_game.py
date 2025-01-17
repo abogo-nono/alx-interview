@@ -4,8 +4,10 @@
 
 def isWinner(x, nums):
     """
-    Determines the winner between Ben and Maria based on the number of prime numbers in the given list and a threshold value x.
-    
+    Determines the winner between Ben and Maria
+    based on the number of prime numbers in the
+    given list and a threshold value x.
+
     Args:
         x (int): The threshold value.
         nums (List[int]): A list of integers.
@@ -13,7 +15,6 @@ def isWinner(x, nums):
     Returns:
         str: The name of the winner between Ben and Maria.
     """
-
 
     if not nums or x < 1:
         return None
@@ -29,6 +30,6 @@ def isWinner(x, nums):
 
     primes_count = [sum(sieve[:i + 1]) for i in range(n + 1)]
 
-    ben_wins = sum(primes_count[num] % 2 == 0 for num in nums)
+    b_wins = sum(primes_count[num] % 2 == 0 for num in nums)
 
-    return "Ben" if ben_wins > x // 2 else "Maria" if ben_wins < x // 2 else None
+    return "Ben" if b_wins > x // 2 else "Maria" if b_wins < x // 2 else None
